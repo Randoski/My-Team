@@ -1,0 +1,665 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 932px;
+    display: grid;
+    height: 100%;
+    margin: 71px auto 0;
+}
+
+
+// Heading Text
+
+.heading-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 20px 96px;
+    max-width: 919px;
+
+
+    h2 {
+        font-family: 'PT Serif', serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: -0.045em;
+     }
+
+    .who-we-are {
+
+        .text1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            text-transform: uppercase;
+        }
+
+        .text2 {
+            margin-top: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 27px;
+            max-width: 439px;
+        }
+    }    
+}
+
+
+// Team mate section
+.team {
+    // display: flex;
+    // flex-wrap: wrap;
+    // max-width: 919px;
+    // justify-content: space-between;
+    // row-gap: 132px;
+    // margin: 0 20px;
+
+    display: grid;
+    max-width: 919px;
+    max-height: 1149px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 20px;
+
+
+    .team-member {
+        max-width: 264px;
+        max-height: 383px;
+        display: flex;
+        
+
+        .pics-and-name {
+            .img-holder {
+                max-width: 238px;
+                max-height: 347px;
+
+                img {
+                    width: 100%;
+                }
+
+            }   
+
+            p {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 27px;
+            }
+        }
+
+        .job-description {
+            position: relative;
+
+
+            p {
+            font-family: 'PT Serif', serif;
+            font-size: 12px;
+            font-weight: normal;
+            font-style: normal;
+            line-height: 16px;
+            text-transform: uppercase;
+            transform: rotate(90deg);
+            position: absolute;
+            margin-top: 44px;
+            margin-left: -38px;
+            width: 104px;
+            }
+        }  
+     }
+
+    .mate2, .mate5 {
+        padding-top: 70px;
+    }
+
+    .mate4, .mate5, .mate6 {
+        margin-top: 30px;
+    }
+}
+
+
+    // Footer 
+    footer {
+        p {
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: #A9A9A9;
+            padding: 134px 0 24px;
+
+            a {
+                color: #A9A9A9;
+                font-weight: bold;
+            }
+        }
+}
+    
+
+
+// Media Queries
+
+@media screen and (max-width: 1000px) {
+
+
+    // Heading Text
+    .heading-text {
+        margin: 0 0 96px 50px;
+        max-width: 850px;
+
+    }
+
+        // Team
+    .team {
+        // max-width: 880px;
+        // max-height: 1149px;
+        margin-left: 60px;
+
+        .team-member {
+            max-width: 294px;
+            max-height: 363px;
+            
+        
+            .pics-and-name {
+
+                .img-holder {
+                    max-width: 218px;
+                    max-height: 327px;
+                }   
+            }
+        }
+    }    
+}
+
+    
+
+
+@media screen and (max-width: 863px) {
+
+
+    // Heading Text
+    .heading-text {
+        margin: 0 0 96px 60px;
+        max-width: 780px;
+        flex-direction: column;
+
+    .who-we-are {
+        margin-top: 38px;
+    }
+
+    }
+
+        // Team
+    .team {
+        margin-left: 60px;
+
+        .team-member {
+            max-width: 264px;
+            max-height: 333px;
+            
+        
+            .pics-and-name {
+
+                .img-holder {
+                    max-width: 188px;
+                    max-height: 297px;
+                }   
+            }
+        }
+    }    
+}
+
+
+@media screen and (max-width: 783px) {
+
+
+    // Heading Text
+    .heading-text {
+        margin: 0 0 96px 30px;
+        max-width: 780px;
+        flex-direction: column;
+    }
+
+        // Team
+    .team {
+        margin-left: 40px;
+
+        .team-member {
+            max-width: 234px;
+            max-height: 303px;
+            
+        
+            .pics-and-name {
+
+                .img-holder {
+                    max-width: 158px;
+                    max-height: 267px;
+                }   
+            }
+        }
+    }    
+}
+
+
+
+@media screen and (max-width: 656px) {
+
+
+    // Heading Text
+    .heading-text {
+        margin: 0 0 96px 30px;
+        max-width: 780px;
+        flex-direction: column;
+    }
+
+        // Team
+    .team {
+        margin-left: 40px;
+
+        .team-member {
+            max-width: 204px;
+            max-height: 273px;
+            
+        
+            .pics-and-name {
+
+                .img-holder {
+                    max-width: 138px;
+                    max-height: 237px;
+                }   
+            }
+        }
+    }    
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+
+    // Heading Text
+    .heading-text {
+        margin: 0 0 71px 25px;
+    
+        .who-we-are {
+    
+            .text2 {
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }    
+    }
+
+    // Team
+    .team {
+        margin-left: 25px;
+
+        .team-member {
+            max-width: 204px;
+            max-height: 273px;
+            
+        
+            .pics-and-name {
+
+                .img-holder {
+                    max-width: 138px;
+                    max-height: 237px;
+
+                    img {
+                        width: 100%;
+                    }
+    
+                }   
+    
+                p {
+                    font-size: 14px;
+                    line-height: 21px;
+                }
+            }
+    
+            .job-description {
+
+                p {
+                    font-size: 10px;
+                    line-height: 13px;
+                }
+            }  
+        }       
+    }
+}
+
+
+@media screen and (max-width: 560px) {
+
+    // Team
+    .team {
+        margin-left: 25px;
+
+        .team-member {
+            max-width: 194px;
+            max-height: 263px;
+            
+        
+            .pics-and-name {
+
+                .img-holder {
+                    max-width: 128px;
+                    max-height: 227px;
+                }   
+            }
+        }       
+    }
+}
+
+
+@media screen and (max-width: 525px) {
+
+    // Team
+    .team {
+
+        .team-member {
+            max-width: 184px;
+            max-height: 253px;
+            
+        
+            .pics-and-name {
+
+                .img-holder {
+                    max-width: 118px;
+                    max-height: 217px;
+                }   
+            }
+        }       
+    }
+}
+
+
+@media screen and (max-width: 490px) {
+
+    .heading-text {
+        margin-right: 35px;
+    }
+
+    .team {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 350px;
+        column-gap: 60px;
+        // margin-right: 35px;
+
+        .team-member {
+            max-width: 226px;
+            max-height: 327px;
+            
+        
+            .pics-and-name {
+
+                .img-holder {
+                    max-width: 228px;
+                    max-height: 351px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }                
+        }  
+        
+        .mate2, .mate5 {
+            padding-top: 0;
+        }
+    
+        .mate4, .mate5, .mate6 {
+            margin-top: 0;
+        }
+
+        .mate2, .mate4, .mate6 {
+            margin-top: 50px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 430px) {
+
+
+    .heading-text {
+        margin-right: 24px;
+        margin-left: 12px;
+    }
+
+    .team {
+        max-width: 350px;
+        column-gap: 20px;
+        margin-left: 12px;
+        margin-right: 24px;
+
+        .team-member {
+            max-width: 156px;
+            max-height: 237px;
+
+            
+        
+            .pics-and-name {
+
+                .img-holder {
+                    max-width: 138px;
+                    max-height: 209px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }                
+        }  
+        
+        .mate2, .mate5 {
+            padding-top: 0;
+        }
+    
+        .mate4, .mate5, .mate6 {
+            margin-top: 0;
+        }
+
+        .mate2, .mate4, .mate6 {
+            margin-top: 50px;
+        }
+    }  
+}  
+
+
+
+@media screen and (max-width: 366px) {
+
+
+    .heading-text {
+        margin-right: 24px;
+        margin-left: 12px;
+    }
+
+    .team {
+        max-width: 300px;
+        column-gap: 20px;
+        margin-left: 12px;
+        margin-right: 24px;
+
+        .team-member {
+            max-width: 151px;
+            max-height: 222px;
+
+            
+        
+            .pics-and-name {
+
+                .img-holder {
+                    max-width: 123px;
+                    max-height: 194px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }                
+        }  
+        
+        .mate2, .mate5 {
+            padding-top: 0;
+        }
+    
+        .mate4, .mate5, .mate6 {
+            margin-top: 0;
+        }
+
+        .mate2, .mate4, .mate6 {
+            margin-top: 50px;
+        }
+    }  
+}  
+
+
+
+
+@media screen and (max-width: 331px) {
+
+
+    .heading-text {
+        margin-right: 24px;
+        margin-left: 12px;
+    }
+
+    .team {
+        max-width: 300px;
+        column-gap: 20px;
+        margin-left: 12px;
+        margin-right: 24px;
+
+        .team-member {
+            max-width: 141px;
+            max-height: 212px;
+
+            
+        
+            .pics-and-name {
+
+                .img-holder {
+                    max-width: 113px;
+                    max-height: 184px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }                
+        }  
+        
+        .mate2, .mate5 {
+            padding-top: 0;
+        }
+    
+        .mate4, .mate5, .mate6 {
+            margin-top: 0;
+        }
+
+        .mate2, .mate4, .mate6 {
+            margin-top: 50px;
+        }
+    }  
+}  
+
+
+
+
+@media screen and (max-width: 299px) {
+
+
+    .heading-text {
+        margin-right: 24px;
+        margin-left: 12px;
+    }
+
+    .team {
+        max-width: 300px;
+        column-gap: 20px;
+        margin-left: 12px;
+        margin-right: 24px;
+
+        .team-member {
+            max-width: 131px;
+            max-height: 202px;
+
+            
+        
+            .pics-and-name {
+
+                .img-holder {
+                    max-width: 103px;
+                    max-height: 174px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }                
+        }  
+        
+        .mate2, .mate5 {
+            padding-top: 0;
+        }
+    
+        .mate4, .mate5, .mate6 {
+            margin-top: 0;
+        }
+
+        .mate2, .mate4, .mate6 {
+            margin-top: 50px;
+        }
+    }  
+}  
+
+
+
+
+@media screen and (max-width: 280px) {
+
+    .heading-text {
+        margin-bottom: 24px;
+    }
+
+    .team {
+        max-width: 300px;
+        grid-template-columns: repeat(1, 1fr );
+
+        .team-member {
+            max-width: 251px;
+            max-height: 292px;
+            margin-top: 30px;
+
+            
+        
+            .pics-and-name {
+
+                .img-holder {
+                    max-width: 193px;
+                    max-height: 284px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }                
+        }  
+    }  
+}  
+
+
+
+
